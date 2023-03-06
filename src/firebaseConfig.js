@@ -1,12 +1,14 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCYHVKPC1I_ImZMAUXE7YmDnXqK4khRZ_U",
-  authDomain: "svelte-firebase-auth-6143b.firebaseapp.com",
-  projectId: "svelte-firebase-auth-6143b",
-  storageBucket: "svelte-firebase-auth-6143b.appspot.com",
-  messagingSenderId: "574993693708",
-  appId: "1:574993693708:web:bbc0a6bd9bff4919d54229"
+  apiKey: "AIzaSyAfBqTXwsdMsCz91tPlGOY1DwvP-uwkim4",
+  authDomain: "sveltekit-firebase-auth-d7a1e.firebaseapp.com",
+  projectId: "sveltekit-firebase-auth-d7a1e",
+  storageBucket: "sveltekit-firebase-auth-d7a1e.appspot.com",
+  messagingSenderId: "170707509132",
+  appId: "1:170707509132:web:90e01825776b775c3640a9"
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
